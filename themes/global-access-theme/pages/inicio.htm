@@ -1,0 +1,18 @@
+title = "Inicio"
+url = "/"
+layout = "default"
+description = "Pagina de inicio"
+is_hidden = "0"
+==
+{% put header %}
+  {% default %}
+  {% partial "gallery" %}
+{% endput %}
+
+<main class="ga-body">
+  <section class="container-fluid" id="about-us" class="ga-about-us">{% partial "about-us" %}</section>
+  <section class="container-fluid" id="team" class="ga-team">{% partial "team" %}</section>
+  <section class="container-fluid" id="work-with-us" class="ga-jobs">{% partial "jobs" %}</section>
+  <section class="container-fluid" id="services" class="ga-services">{% partial "services" %}</section>
+  <section class="container-fluid" id="projects" class="ga-projects">{% partial "projects" %}</section>
+</main>

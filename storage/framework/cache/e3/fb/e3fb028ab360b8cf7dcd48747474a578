@@ -1,0 +1,7 @@
+1443319102s:342:"a:2:{s:5:"mtime";i:1443287035;s:7:"content";s:288:"{{ form_open() }}
+    <select name="locale" data-request="onSwitchLocale" class="form-control">
+        {% for code, name in locales %}
+            <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+        {% endfor %}
+    </select>
+{{ form_close() }}";}";

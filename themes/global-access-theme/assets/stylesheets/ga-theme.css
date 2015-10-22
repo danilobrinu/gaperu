@@ -1,0 +1,687 @@
+/*
+===========
+== FONTS ==
+==================================
+== External and internal fonts. ==
+==================================*/
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/ty9dfvLAziwdqQ2dHoyjphTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/frNV30OaYdlFRtH2VnZZdhTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/gwVJDERN2Amz39wrSoZ7FxTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/aZMswpodYeVhtRvuABJWvBTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/VvXUGKZXbHtX_S_VCTLpGhTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/e7MeVAyvogMqFwwl61PKhBTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/2tsd397wLxj96qwHyNIkxPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Fl4y0QdOxyyTHEGMXX8kcRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/-L14Jk06m6pUHB-5mXQQnRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/I3S1wsgSg9YCurV6PUkTORJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/NYDWBdD4gIq26G5XYbHsFBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/-2n2p-_Y08sg57CNWQfKNvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/NdF9MtnOpLzo-noMoG0miPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/77FXFjRbGzN4aCrSFhlh3hJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/isZ-wbCXNKAbnjo6_TwHThJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/UX6i4JxQDm3fVTc1CPuwqhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/jSN2CGVDbcVyCnfJfjSdfBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/PwZc-YbIL414wB9rB1IAPRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/97uahxiqZRoncBaCEI3aWxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/*
+==========
+== BASE ==
+===============================================================
+== Basic default styles usually used for a simple selectors. ==
+== Like clearfix for example.                                ==
+===============================================================*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #eee;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+a { background-color: transparent; }
+a,
+a:focus,
+a:active,
+a:hover {
+  color: #009dd8;
+  outline: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+[role="button"] { cursor: pointer; }
+address {
+  margin-bottom: 22px;
+  font-style: normal;
+  line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6 { font-weight: 700; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background-color: #eee; }
+::-webkit-scrollbar-thumb { background-color: #ccc; }
+.nav > li > a { padding: 14px 16px; }
+.container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.container-fluid > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container > .navbar-header {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.container-fluid {
+  width: 90%;
+  max-width: 1600px;
+}
+/*
+============
+== LAYOUT ==
+=====================================
+== Grids definition and positions. ==
+=====================================*/
+.fb-layout { display: flex; }
+.fb-layout--horizontal { flex-direction: row; }
+.fb-layout--vertical { flex-direction: column; }
+.fb-layout--horizontal.fb-layout--reverse { flex-direction: row-reverse; }
+.fb-layout--vertical.fb-layout--reverse { flex-direction: column-reverse; }
+.fb-justified { justify-content: space-between; }
+.fb-justified.fb-justified--start { justify-content: flex-start; }
+.fb-justified.fb-justified--center { justify-content: center; }
+.fb-justified.fb-justified--end { justify-content: flex-end; }
+.fb-justified.fb-justified--around { justify-content: space-around; }
+.fb-align { align-items: stretch; }
+.fb-align.fb-align--start { align-items: flex-start; }
+.fb-align.fb-align--center { align-items: center; }
+.fb-align.fb-align--end { align-items: flex-end; }
+.fb-align.fb-align--baseline { align-items: baseline; }
+.fb-align-self { align-self: stretch; }
+.fb-align-self.fb-align-self--start { align-self: flex-start; }
+.fb-align-self.fb-align-self--center { align-self: center; }
+.fb-align-self.fb-align-self--end { align-self: flex-end; }
+.fb-align-self.fb-align-self--baseline { align-self: baseline; }
+.fb-wrap { flex-wrap: wrap; }
+.fb-wrap.fb-wrap--reverse { flex-wrap.fb-wrap--reverse }
+.fb-flex { flex: 1; }
+/*
+============
+== MODULE ==
+=======================================================
+== A group of elements which combined form a module. ==
+== Like for example header or sidebar.               ==
+=======================================================*/
+#top-hook {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 13px 16px;
+  font-size: 32px;
+  line-height: 1;
+  z-index: 9999;
+}
+.ga-block { min-height: 100%; }
+.ga-bg-image {
+  background: #333 no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.ga-ribbon {
+  background-color: #009dd8;
+  line-height: 45px;
+  height: 45px;
+  padding: 0 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-width: 200px;
+}
+.ga-gallery {
+  position: relative;
+  height: 100%;
+}
+.ga-gallery .carousel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.ga-gallery .carousel-indicators li {
+  width: 16px !important;
+  height: 16px !important;
+  border-width: 2px;
+  border-color: #009dd8;
+}
+.ga-gallery .carousel-indicators li.active { background-color: #009dd8; }
+.ga-gallery .carousel-inner { height: 100%; }
+.ga-gallery .carousel-inner .item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #333 no-repeat 50% 25%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.ga-gallery .carousel-caption {
+  padding-bottom: 0;
+  margin-bottom: 64px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-shadow: 0 0 16px #000;
+}
+.ga-padding { padding: 64px; }
+.ga-bg-blue { background-color: #009dd8; }
+.ga-bg-white { background-color: #fff; }
+.ga-bg-not-white { background-color: #ddd; }
+.ga-box-h720 { height: 720px; }
+.ga-box-h480 { height: 480px; }
+.ga-box-h300 { height: 300px; }
+.ga-navbar {
+  min-height: 64px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-bottom: 0;
+  font-size: .875em;
+  letter-spacing: .15em;
+  border-radius: 0;
+  border: 0;
+  background-color: #fff;
+}
+.ga-navbar .navbar-toggle {
+  padding: 16px 0;
+  margin: 0;
+  border: 0;
+}
+.ga-navbar .navbar-toggle .icon-bar { background-color: #333; }
+.ga-navbar .navbar-nav > li > a { color: #777; }
+.ga-navbar .navbar-nav > li > a:hover,
+.ga-navbar .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.ga-footer {
+  color: #fff;
+  background: #333 url(../images/dark_geometric.png);
+}
+.ga-footer h1,
+.ga-footer h2,
+.ga-footer h3,
+.ga-footer h4,
+.ga-footer h5,
+.ga-footer h6 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+.ga-footer p {
+  margin: 0;
+  line-height: 1.4;
+}
+.ga-footer .row:first-child { margin-bottom: 100px; }
+/* about us */
+.ga-about-us {}
+.ga-about-us__content {}
+.ga-about-us__content h1,
+.ga-about-us__content h2,
+.ga-about-us__content h3,
+.ga-about-us__content h4,
+.ga-about-us__content h5,
+.ga-about-us__content h6 {
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-size: 66px;
+  letter-spacing: 1px;
+}
+.ga-about-us__milestone {}
+.ga-about-us__milestone__content {
+  height: 100%;
+  padding-right: 8px;
+  overflow: auto;
+}
+/* team */
+.ga-team {}
+.ga-team__title {
+  padding: 30px;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #fff;
+}
+.ga-team__title p { margin: 0; }
+.ga-team__member {}
+.ga-team__member__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ddd no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.ga-team__member__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity .45s;
+}
+.ga-team__member__info__name,
+.ga-team__member__info__job {
+  position: absolute;
+  left: 15%;
+  font-weight: 700;
+}
+.ga-team__member__info__name { top: 15%; }
+.ga-team__member__info__job { bottom: 15%; }
+/* jobs */
+.ga-jobs__join-us h1,
+.ga-jobs__join-us h2,
+.ga-jobs__join-us h3,
+.ga-jobs__join-us h4,
+.ga-jobs__join-us h5,
+.ga-jobs__join-us h6 {
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-size: 66px;
+  letter-spacing: 1px;
+}
+.ga-jobs__work-with-us h1,
+.ga-jobs__work-with-us h2,
+.ga-jobs__work-with-us h3,
+.ga-jobs__work-with-us h4,
+.ga-jobs__work-with-us h5,
+.ga-jobs__work-with-us h6 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+/* projects and services */
+.ga-projects__project {}
+.ga-projects__project h1,
+.ga-projects__project h2,
+.ga-projects__project h3,
+.ga-projects__project h4,
+.ga-projects__project h5,
+.ga-projects__project h6,
+.ga-services__service h1,
+.ga-services__service h2,
+.ga-services__service h3,
+.ga-services__service h4,
+.ga-services__service h5,
+.ga-services__service h6 {
+  width: 80%;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.ga-projects__project:nth-child(odd) > div,
+.ga-services__service:nth-child(odd) > div { float: right; }
+.ga-projects__project__image,
+.ga-services__service__image { background-color: #333; }
+.ga-projects__project__image__background,
+.ga-services__service__image__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #333 no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.ga-projects__project__image__hook,
+.ga-services__service__image__hook {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff !important;
+  border: 2px solid;
+  border-radius: 50%;
+  opacity: 0;
+  --webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  transition: opacity .5s;
+}
+/* post */
+.ga-post {
+  padding: 3em;
+  background-color: #fff;
+}
+.ga-pos__divider {
+  display: block;
+  width: 100px;
+  margin: 51px auto 41px auto;;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .15);
+}
+.ga-post__overview {
+  margin-bottom: 30px;
+  font-size: 22px;
+  letter-spacing: .01rem;
+}
+.ga-post__content { padding-bottom: 100px; }
+.ga-post__content img { max-width: 100%; }
+/* post - bg image */
+.ga-bg-image { position: relative; }
+.ga-bg-image .container-fluid { margin-top: 15%; }
+.ga-bg-image .ga-bg-image__cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+.ga-bg-image h1 {
+  padding: 100px 0;
+  font-size: 60px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+/*
+===========
+== STATE ==
+================================================================
+== contains different states of elements. Definition of rules ==
+== if particular object is hidden, pressed, expanded etc ...  ==
+===============================================================*/
+.ga-projects__project__image:hover .ga-projects__project__image__background,
+.ga-services__service__image:hover .ga-services__service__image__background { opacity: .7; }
+.ga-projects__project__image:hover .ga-projects__project__image__hook,
+.ga-services__service__image:hover .ga-services__service__image__hook { opacity: 1; }
+.ga-team__member:hover .ga-team__member__info { opacity: .9; }
+/*
+===========
+== THEME ==
+======================================================
+== Oriented more to the visual parts of the things. ==
+== Similar like the state category.                 ==
+=====================================================*/
+/*
+================
+== RESPONSIVE ==
+====================================
+== Media queries and breakpoints. ==
+===================================*/
+@media (max-width: 992px) {
+  .ga-box-h720,
+  .ga-box-h480 { height: auto; }
+  .ga-box-h480.ga-services__service__image,
+  .ga-box-h480.ga-projects__project__image { height: 360px; }
+  .ga-footer {
+    padding-top: 80px;
+    padding-bottom: 32px;
+    height: auto;
+  }
+  .ga-footer .row:first-child { margin-bottom: 0; }
+  .ga-footer .row > div { margin-bottom: 48px; }
+  .ga-projects__project:nth-child(odd) > div,
+  .ga-services__service:nth-child(odd) > div { float: none; }
+  .ga-gallery .carousel-caption { font-size: 48px; }
+}
+@media (max-width: 480px) {
+  .ga-padding { padding: 32px; }
+  .ga-gallery .carousel-caption { font-size: 40px; }
+}

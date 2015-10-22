@@ -1,0 +1,8 @@
+1443404649s:602:"a:6:{s:5:"mtime";i:1443404047;s:7:"content";s:225:"<div class="row">
+  <div class="col-lg-7 ga-box-h480 ga-padding ga-bg-white">{% content "unetenos" %}</div>
+  <div class="col-lg-5 ga-box-h480 ga-padding ga-bg-not-white">{% content "trabaja-con-nosotros" %}</div>
+</div>
+";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:223:"<div class="row">
+  <div class="col-lg-7 ga-box-h480 ga-padding ga-bg-white">{% content "unetenos" %}</div>
+  <div class="col-lg-5 ga-box-h480 ga-padding ga-bg-not-white">{% content "trabaja-con-nosotros" %}</div>
+</div>";}";

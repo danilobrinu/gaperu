@@ -1,0 +1,6 @@
+1443450335s:464:"a:6:{s:5:"mtime";i:1443404752;s:7:"content";s:138:"title = "servicio"
+url = "/servicio/:slug"
+layout = "default"
+description = "Pagina individual para cada servicio"
+is_hidden = "0"
+==";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:8:"servicio";s:3:"url";s:15:"/servicio/:slug";s:6:"layout";s:7:"default";s:11:"description";s:36:"Pagina individual para cada servicio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:0:"";}";

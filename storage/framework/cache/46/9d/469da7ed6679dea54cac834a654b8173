@@ -1,0 +1,29 @@
+1445274941s:1631:"a:6:{s:5:"mtime";i:1443404721;s:7:"content";s:722:"title = "Inicio"
+url = "/"
+layout = "default"
+description = "Pagina de inicio"
+is_hidden = "0"
+==
+{% put header %}
+  {% default %}
+  {% partial "gallery" %}
+{% endput %}
+
+<main class="ga-body">
+  <section class="container-fluid" id="about-us" class="ga-about-us">{% partial "about-us" %}</section>
+  <section class="container-fluid" id="team" class="ga-team">{% partial "team" %}</section>
+  <section class="container-fluid" id="work-with-us" class="ga-jobs">{% partial "jobs" %}</section>
+  <section class="container-fluid" id="services" class="ga-services">{% partial "services" %}</section>
+  <section class="container-fluid" id="projects" class="ga-projects">{% partial "projects" %}</section>
+</main>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:6:"Inicio";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:11:"description";s:16:"Pagina de inicio";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:618:"{% put header %}
+  {% default %}
+  {% partial "gallery" %}
+{% endput %}
+
+<main class="ga-body">
+  <section class="container-fluid" id="about-us" class="ga-about-us">{% partial "about-us" %}</section>
+  <section class="container-fluid" id="team" class="ga-team">{% partial "team" %}</section>
+  <section class="container-fluid" id="work-with-us" class="ga-jobs">{% partial "jobs" %}</section>
+  <section class="container-fluid" id="services" class="ga-services">{% partial "services" %}</section>
+  <section class="container-fluid" id="projects" class="ga-projects">{% partial "projects" %}</section>
+</main>";}";

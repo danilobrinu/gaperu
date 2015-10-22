@@ -1,0 +1,44 @@
+1443314491s:2188:"a:6:{s:5:"mtime";i:1443313803;s:7:"content";s:1018:"==
+<nav class="navbar">
+	<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#"><img src="{{ 'assets/images/logo.png' | theme }} " alt="" style="height: 48px;"></a>
+    </div>
+    <!-- menu -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about-us" class="text-uppercase">about us</a></li>
+        <li><a href="#services" class="text-uppercase">services</a></li>
+        <li><a href="#projects" class="text-uppercase">projects</a></li>
+        <li><a href="#contact" class="text-uppercase">contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1014:"<nav class="navbar">
+	<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#"><img src="{{ 'assets/images/logo.png' | theme }} " alt="" style="height: 48px;"></a>
+    </div>
+    <!-- menu -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about-us" class="text-uppercase">about us</a></li>
+        <li><a href="#services" class="text-uppercase">services</a></li>
+        <li><a href="#projects" class="text-uppercase">projects</a></li>
+        <li><a href="#contact" class="text-uppercase">contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>";}";

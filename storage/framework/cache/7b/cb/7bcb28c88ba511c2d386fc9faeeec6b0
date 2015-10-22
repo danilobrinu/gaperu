@@ -1,0 +1,42 @@
+1445274944s:2123:"a:6:{s:5:"mtime";i:1443427367;s:7:"content";s:983:"description = "Menú de navegación"
+==
+<nav class="ga-navbar navbar">
+	<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only">menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="{{ 'inicio' | page }}?lang={{ lang }}"><img src="{{ 'assets/images/logo.png' | theme }} " alt="" style="height: 48px;"></a>
+    </div>
+    <!-- menu -->
+    <div class="ga-navbar-collapse collapse navbar-collapse navbar-right" id="menu">
+      <ul class="nav navbar-nav text-uppercase">
+      	{% content "menu" %}
+      	<li class="text-uppercase ga-bg-blue"><a href="?lang={{ lang == 'es' ? 'en' : 'es' }}" style="color: #fff;">{{ lang == 'es' ? 'en' : 'es' }}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:20:"Menú de navegación";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:939:"<nav class="ga-navbar navbar">
+	<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only">menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="{{ 'inicio' | page }}?lang={{ lang }}"><img src="{{ 'assets/images/logo.png' | theme }} " alt="" style="height: 48px;"></a>
+    </div>
+    <!-- menu -->
+    <div class="ga-navbar-collapse collapse navbar-collapse navbar-right" id="menu">
+      <ul class="nav navbar-nav text-uppercase">
+      	{% content "menu" %}
+      	<li class="text-uppercase ga-bg-blue"><a href="?lang={{ lang == 'es' ? 'en' : 'es' }}" style="color: #fff;">{{ lang == 'es' ? 'en' : 'es' }}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>";}";

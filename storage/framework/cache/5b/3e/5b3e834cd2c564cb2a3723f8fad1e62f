@@ -1,0 +1,86 @@
+1445274941s:2984:"a:6:{s:5:"mtime";i:1443454964;s:7:"content";s:1401:"title = "publicacion"
+url = "/publicacion/:slug"
+layout = "default"
+description = "Pagina individual para las publicaciones - servicios o proyectos"
+is_hidden = "0"
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+  $slug = $this->param('slug');
+  $this['post'] = Post::where('slug', '=', $slug)
+    ->isPublished()
+    ->first();
+
+	if( !$this['post'] ) return Redirect::to('/404');
+}
+?>
+==
+{% put header %}
+  {% default %}
+  <div class="ga-post-image ga-bg-image fb-flex" style="background-image: url({{
+      post.featured_images.isEmpty() ?
+      'https://placeholdit.imgix.net/~text?txtsize=60&bg=999&txtclr=ffffff&txt=404&w=1000&h=500' :
+      post.featured_images.first().getPath()
+    }});">
+      <div class="ga-bg-image__cover"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2"><h1>{{ post.title }}</h1></div>
+        </div>
+      </div>
+    </div>
+{% endput %}
+<section class="container-fluid">
+  <div class="row">
+    <div class="ga-post col-lg-12">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <p class="ga-post__overview">{{ post.excerpt }}</p>
+          <div class="ga-post__divider"></div>
+          <div class="ga-post__content">{{ post.content | md | raw }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:11:"publicacion";s:3:"url";s:18:"/publicacion/:slug";s:6:"layout";s:7:"default";s:11:"description";s:64:"Pagina individual para las publicaciones - servicios o proyectos";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";s:234:"
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+  $slug = $this->param('slug');
+  $this['post'] = Post::where('slug', '=', $slug)
+    ->isPublished()
+    ->first();
+
+	if( !$this['post'] ) return Redirect::to('/404');
+}
+";s:6:"markup";s:978:"{% put header %}
+  {% default %}
+  <div class="ga-post-image ga-bg-image fb-flex" style="background-image: url({{
+      post.featured_images.isEmpty() ?
+      'https://placeholdit.imgix.net/~text?txtsize=60&bg=999&txtclr=ffffff&txt=404&w=1000&h=500' :
+      post.featured_images.first().getPath()
+    }});">
+      <div class="ga-bg-image__cover"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2"><h1>{{ post.title }}</h1></div>
+        </div>
+      </div>
+    </div>
+{% endput %}
+<section class="container-fluid">
+  <div class="row">
+    <div class="ga-post col-lg-12">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <p class="ga-post__overview">{{ post.excerpt }}</p>
+          <div class="ga-post__divider"></div>
+          <div class="ga-post__content">{{ post.content | md | raw }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>";}";

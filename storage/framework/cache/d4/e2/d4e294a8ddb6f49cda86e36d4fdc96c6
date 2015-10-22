@@ -1,0 +1,10 @@
+1445274944s:681:"a:6:{s:5:"mtime";i:1443455524;s:7:"content";s:262:"description = "Pié de página"
+==
+<a href="#top" id="top-hook"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<footer class="ga-footer ga-block fb-layout fb-layout--vertical fb-justified fb-justified--center">
+ {% partial "contact" %}
+</footer>
+";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:15:"Pié de página";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:223:"<a href="#top" id="top-hook"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<footer class="ga-footer ga-block fb-layout fb-layout--vertical fb-justified fb-justified--center">
+ {% partial "contact" %}
+</footer>";}";

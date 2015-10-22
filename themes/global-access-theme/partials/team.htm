@@ -1,0 +1,29 @@
+description = "Equipo Global Acces"
+==
+<div class="row">
+  <div class="ga-team__title col-lg-3 col-sm-4 fb-layout fb-layout--vertical fb-align fb-align--center fb-justified fb-justified--center ga-box-h300 ga-bg-blue">
+    <div class="ga-team__title__content text-uppercase">{% content "team" %}</div>
+  </div>
+  {% if team is empty %}
+      <p>No hay datos</p>
+    {% else %}
+      {% for person in team %}
+        <div class="col-lg-3 col-sm-4 ga-box-h300">
+          <div class="ga-team__member">
+            <div class="ga-team__member__image" style="background-image: url({{
+                person.featured_images.isEmpty() ?
+                'https://placeholdit.imgix.net/~text?txtsize=60&bg=999&txtclr=ffffff&txt=404&w=450&h=450' :
+                person.featured_images.first().getPath()
+              }});"></div>
+            <div class="ga-team__member__info">
+              <div class="ga-team__member__info__name">{{ person.title }}</div>
+              <div class="ga-team__member__info__job">
+                - <br>
+                {{ person.excerpt }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+</div>

@@ -1,0 +1,48 @@
+1445274944s:2487:"a:6:{s:5:"mtime";i:1443497879;s:7:"content";s:1164:"description = "Sección - Proyectos"
+==
+<div class="row">
+  <div class="ga-ribbon col-lg-3 col-sm-6">- {% content "cinta-proyectos" %}</div>
+</div>
+{% if projects is empty %}
+  <p>No hay projectos</p>
+{% else %}
+  {% for project in projects %}
+    <div class="row ga-projects__project">
+      <div class="col-lg-6 col-md-6 ga-box-h480 ga-bg-white ga-projects__project__image">
+        <div class="ga-projects__project__image__background" style="background-image: url({{
+            project.featured_images.isEmpty() ?
+            'https://placeholdit.imgix.net/~text?txtsize=60&bg=999&txtclr=ffffff&txt=404&w=1000&h=500' :
+            project.featured_images.first().getPath()
+          }});"></div>
+        <a href="{{ 'publicacion' | page({ slug: project.slug }) }}?lang={{ lang }}" class="ga-projects__project__image__hook" target="_blank"><span class="glyphicon glyphicon-link"></span></a>
+      </div>
+      <div class="col-lg-6 col-md-6 ga-box-h480 ga-padding ga-bg-not-white ga-projects__project__content">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.excerpt }}</p>
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}
+";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:20:"Sección - Proyectos";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1120:"<div class="row">
+  <div class="ga-ribbon col-lg-3 col-sm-6">- {% content "cinta-proyectos" %}</div>
+</div>
+{% if projects is empty %}
+  <p>No hay projectos</p>
+{% else %}
+  {% for project in projects %}
+    <div class="row ga-projects__project">
+      <div class="col-lg-6 col-md-6 ga-box-h480 ga-bg-white ga-projects__project__image">
+        <div class="ga-projects__project__image__background" style="background-image: url({{
+            project.featured_images.isEmpty() ?
+            'https://placeholdit.imgix.net/~text?txtsize=60&bg=999&txtclr=ffffff&txt=404&w=1000&h=500' :
+            project.featured_images.first().getPath()
+          }});"></div>
+        <a href="{{ 'publicacion' | page({ slug: project.slug }) }}?lang={{ lang }}" class="ga-projects__project__image__hook" target="_blank"><span class="glyphicon glyphicon-link"></span></a>
+      </div>
+      <div class="col-lg-6 col-md-6 ga-box-h480 ga-padding ga-bg-not-white ga-projects__project__content">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.excerpt }}</p>
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}";}";

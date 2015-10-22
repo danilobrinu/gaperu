@@ -1,0 +1,47 @@
+title = "publicacion"
+url = "/publicacion/:slug"
+layout = "default"
+description = "Pagina individual para las publicaciones - servicios o proyectos"
+is_hidden = "0"
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+  $slug = $this->param('slug');
+  $this['post'] = Post::where('slug', '=', $slug)
+    ->isPublished()
+    ->first();
+
+	if( !$this['post'] ) return Redirect::to('/404');
+}
+?>
+==
+{% put header %}
+  {% default %}
+  <div class="ga-post-image ga-bg-image fb-flex" style="background-image: url({{
+      post.featured_images.isEmpty() ?
+      'https://placeholdit.imgix.net/~text?txtsize=60&bg=999&txtclr=ffffff&txt=404&w=1000&h=500' :
+      post.featured_images.first().getPath()
+    }});">
+      <div class="ga-bg-image__cover"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2"><h1>{{ post.title }}</h1></div>
+        </div>
+      </div>
+    </div>
+{% endput %}
+<section class="container-fluid">
+  <div class="row">
+    <div class="ga-post col-lg-12">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <p class="ga-post__overview">{{ post.excerpt }}</p>
+          <div class="ga-post__divider"></div>
+          <div class="ga-post__content">{{ post.content | md | raw }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

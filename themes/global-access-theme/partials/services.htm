@@ -1,0 +1,25 @@
+description = "Sección - Servicios"
+==
+<div class="row">
+  <div class="ga-ribbon col-lg-3 col-sm-6">- {% content "cinta-servicios" %}</div>
+</div>
+{% if services is empty %}
+  <p>No hay projectos</p>
+{% else %}
+  {% for service in services %}
+    <div class="row ga-services__service">
+      <div class="col-lg-6 col-md-6 ga-box-h480 ga-bg-white ga-services__service__image">
+        <div class="ga-services__service__image__background" style="background-image: url({{
+            service.featured_images.isEmpty() ?
+            'https://placeholdit.imgix.net/~text?txtsize=60&bg=999&txtclr=ffffff&txt=404&w=1000&h=500' :
+            service.featured_images.first().getPath()
+          }});"></div>
+        <a href="{{ 'publicacion' | page({ slug: service.slug }) }}?lang={{ lang }}" class="ga-services__service__image__hook" target="_blank"><span class="glyphicon glyphicon-link"></span></a>
+      </div>
+      <div class="col-lg-6 col-md-6 ga-box-h480 ga-padding ga-bg-not-white ga-services__service__content">
+        <h2>{{ service.title }}</h2>
+        <p>{{ service.excerpt }}</p>
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}

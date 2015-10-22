@@ -1,0 +1,26 @@
+description = "Galería de la página de inicio"
+==
+<div class="ga-gallery fb-flex">
+  <div id="gallery" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      {% for image in gallery %}
+        <li data-target="#gallery" data-slide-to="{{ loop.index0 }}" class="{{ loop.first ? 'active' : '' }}"></li>
+      {% endfor %}
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      {% for image in gallery %}
+        <div class="item {{ loop.first ? 'active' : '' }}" style="background-image: url({{
+            image.featured_images.isEmpty() ?
+            'https://placeholdit.imgix.net/~text?txtsize=60&bg=999&txtclr=ffffff&txt=404&w=450&h=450' :
+            image.featured_images.first().getPath()
+          }});">
+            <div class="carousel-caption">{{ image.excerpt }}</div>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
